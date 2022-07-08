@@ -2,11 +2,15 @@ import com.interfaces.TaxCalculator;
 import com.interfaces.TaxCalculator2020;
 import com.patterns.memento.Editor;
 import com.patterns.memento.History;
+import com.patterns.state.ConcreteStateA;
+import com.patterns.state.ConcreteStateB;
+import com.patterns.state.Context;
 
 public class Main {
 	public static void main(String[] args) {
 		showMemento();
 		showInterfaces();
+		showState();
 		
 	}	
 	public static void showInterfaces() {
@@ -47,5 +51,16 @@ public class Main {
 		System.out.println(editor.getContent());
 		editor.restore(history.pop());
 		System.out.println(editor.getContent());
+	}
+
+	//Illustrate state pattern
+	public static void showState() {
+		var context = new Context();
+		context.setCurrentState(new ConcreteStateA());
+		context.request();
+		
+		context.setCurrentState(new ConcreteStateB());
+		context.request();
+		
 	}
 }
