@@ -13,13 +13,10 @@ public class ArrayDemos {
 		numbers.insert(70);
 		numbers.insert(80);
 		numbers.insert(90);
-		numbers.print();
 		System.out.println(numbers.getLength());
-		numbers.removeAt(2);
-		numbers.print();
-		numbers.removeAt(0);
-		numbers.print();
-		numbers.removeAt(numbers.getLength() -1 );
+		numbers.removeAt(2);  //Removes 30
+		numbers.removeAt(0); //Remove First, or 10
+		numbers.removeAt(numbers.getLength() -1 ); //Remove last or 90
 		numbers.print();
 		//numbers.removeAt(-1); //will receive exception, as planned.
 		//numbers.removeAt(100); //will receive exception, as planned.
