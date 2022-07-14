@@ -10,7 +10,7 @@ public class ShapeFactory {
 	      	case SQUARE:
 	      		return new Square();
 	      	case RECTANGLE:
-	      		return new Square();
+	      		return new Rectangle();
 	      }
 	      throw new IllegalStateException("Factory did not return valid object");
 	   }

@@ -36,8 +36,12 @@ public class FactoryPatternDemo {
 	    
 	    //Code below is expected to generate an exception as TRIANGLE was not added
 	    //to the shapeFactory class
-	    Shape shape4 = shapeFactory.getShape(Shapes.TRIANGLE);
-	    shape4.draw();		
+	    try {
+	    	Shape shape4 = shapeFactory.getShape(Shapes.TRIANGLE);
+	    	shape4.draw();
+	    } catch(Exception e) {
+	    	System.out.println("The exception was thrown and caught, as expected.");
+	    }
 	}
 
 }
