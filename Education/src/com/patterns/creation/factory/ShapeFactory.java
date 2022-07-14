@@ -1,7 +1,5 @@
 package com.patterns.creation.factory;
 
-import java.awt.dnd.InvalidDnDOperationException;
-
 public class ShapeFactory {
 	
 	   //use getShape method to get object of type shape 
