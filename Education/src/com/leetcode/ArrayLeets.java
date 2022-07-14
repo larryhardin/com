@@ -61,7 +61,7 @@ public class ArrayLeets {
 			}			
 		}
 		if ( tomatoCheese[0] > 0 || tomatoCheese[1] > 0)
-			return Collections.EMPTY_LIST;
+			return Collections.emptyList();
 		return Arrays.asList(distr);
 	}
 }

@@ -14,6 +14,6 @@ public class ShapeFactory {
 	      	case RECTANGLE:
 	      		return new Square();
 	      }
-	      throw new InvalidDnDOperationException("Factory did not return valid object");	      
+	      throw new IllegalStateException("Factory did not return valid object");
 	   }
 	}
