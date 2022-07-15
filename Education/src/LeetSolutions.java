@@ -1,11 +1,10 @@
-import java.util.Arrays;
 import java.util.List;
 
 import com.leetcode.ArrayLeets;
 public class LeetSolutions {
 
 	public static void main(String[] args) {
-		//leet1DoSum();
+		leet1DoSum();
 		leet1276NumberOfBurgers();
 	}
 

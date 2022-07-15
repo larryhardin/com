@@ -1,4 +1,4 @@
-package com.patterns.memento;
+package com.patterns.behavioral.memento;
 
 public class EditorState {
 	//Set to private so as to make it not changeable

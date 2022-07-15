@@ -1,4 +1,4 @@
-package com.patterns.memento;
+package com.patterns.behavioral.memento;
 
 public class Editor {
 	private String content;

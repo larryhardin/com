@@ -1,4 +1,4 @@
-package com.patterns.state;
+package com.patterns.behavioral.state;
 
 public class ConcreteStateA implements State {
 	@Override

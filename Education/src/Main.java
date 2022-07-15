@@ -1,10 +1,10 @@
 import com.interfaces.TaxCalculator;
 import com.interfaces.TaxCalculator2020;
-import com.patterns.memento.Editor;
-import com.patterns.memento.History;
-import com.patterns.state.ConcreteStateA;
-import com.patterns.state.ConcreteStateB;
-import com.patterns.state.Context;
+import com.patterns.behavioral.memento.Editor;
+import com.patterns.behavioral.memento.History;
+import com.patterns.behavioral.state.ConcreteStateA;
+import com.patterns.behavioral.state.ConcreteStateB;
+import com.patterns.behavioral.state.Context;
 
 public class Main {
 	public static void main(String[] args) {

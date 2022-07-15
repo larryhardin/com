@@ -1,4 +1,4 @@
-package com.patterns.creation.factory;
+package com.patterns.creational.factory;
 
 public class FactoryPatternDemo {
 	//Comment regarding this, my first work using Factory method
