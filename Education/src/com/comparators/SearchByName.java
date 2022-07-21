@@ -36,17 +36,16 @@ public class SearchByName {
         return -1;
     }
     										
-    public int iterativeSearchByName(ArrayList<Student> arr, int x, int low, int high) {
+    public int iterativeSearchByName(ArrayList<Student> arr, String x, int low, int high) {
     	//repeat till low = high
     	while (low < high) {
     		int mid = (low + high)/2;
-    		if (x == arr.get(mid).rollno) {    			
+    		if (arr.get(mid).name.compareTo(x) == 0) {    			
     			return mid;
-    			//low = high;//To force break
-    		} else if (x > arr.get(mid).rollno) // x is on the right side
+    		} else if ( x.compareToIgnoreCase(arr.get(mid).name) > 0)
                  low = mid + 1;
     		else                  // x is on the left side
-    			high = mid - 1;
+    			high = high - 1;
     	}
     	return -1;
     }

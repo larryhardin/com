@@ -39,10 +39,9 @@ public class SearchByRollNumber {
     		int mid = (low + high)/2;
     		if (x == arr.get(mid).rollno) {    			
     			return mid;
-    			//low = high;//To force break
     		} else if (x > arr.get(mid).rollno) // x is on the right side
                  low = mid + 1;
-    		else                  // x is on the left side
+    		else                                // x is on the left side
     			high = mid - 1;
     	}
     	return -1;

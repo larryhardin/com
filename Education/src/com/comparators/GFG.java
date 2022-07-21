@@ -83,25 +83,44 @@ class GFG {
     
      //When sorted by name: Dave, Larry, Tom, Tommy, Tony
      searchResult = sbName.binarySearchByName(ar, 0, ar.size(), "Tommy"); //3
-     System.out.println("Iterative BinarySearch results for Tony = " + searchResult);
+     System.out.println("Recursive BinarySearch results for Tommy = " + searchResult);
 
      searchResult = sbName.binarySearchByName(ar, 0, ar.size(), "Dave"); //0
-     System.out.println("Iterative BinarySearch results for Dave = " + searchResult);
+     System.out.println("Recursive BinarySearch results for Dave = " + searchResult);
      
      searchResult = sbName.binarySearchByName(ar, 0, ar.size(), "Tom"); //2
-     System.out.println("Iterative BinarySearch results for Tom = " + searchResult);
+     System.out.println("Recursive BinarySearch results for Tom = " + searchResult);
      
      searchResult = sbName.binarySearchByName(ar, 0, ar.size(), "Tony"); //4
-     System.out.println("Iterative BinarySearch results for Tony = " + searchResult);
+     System.out.println("Recursive BinarySearch results for Tony = " + searchResult);
      
      searchResult = sbName.binarySearchByName(ar, 0, ar.size(), "Larry"); //1
-     System.out.println("Iterative BinarySearch results for Larry = " + searchResult);
-     
-     
+     System.out.println("Recursive BinarySearch results for Larry = " + searchResult);
+    
      searchResult = sbName.binarySearchByName(ar, 0, ar.size(), "Phil"); //-1
-     System.out.println("Iterative BinarySearch results for Phil = " + searchResult);
+     System.out.println("Recursive BinarySearch results for Phil = " + searchResult);
+ 
+     //Iterative:
+     searchResult = sbName.iterativeSearchByName(ar, "Tommy", 0, ar.size() ); //3
+     System.out.println("Iterative BinarySearch results for Tommy = " + searchResult);
      
+     searchResult = sbName.iterativeSearchByName(ar, "Tony", 0, ar.size() );//4
+     System.out.println("Iterative BinarySearch results for Tony = " + searchResult);
      
+     searchResult = sbName.iterativeSearchByName(ar, "Tom", 0, ar.size() ); //2
+     System.out.println("Iterative BinarySearch results for Tom = " + searchResult);
+     
+     searchResult = sbName.iterativeSearchByName(ar, "Dave", 0, ar.size() ); //0
+     System.out.println("Iterative BinarySearch results for Dave = " + searchResult);
+
+     searchResult = sbName.iterativeSearchByName(ar, "Zeus", 0, ar.size() ); //-1
+     System.out.println("Iterative BinarySearch results for Zeus = " + searchResult);
+     
+     searchResult = sbName.iterativeSearchByName(ar, "Astrid", 0, ar.size() ); //-1
+     System.out.println("Iterative BinarySearch results for Astrid = " + searchResult);
+    
+    
+    
      
  }
 }
