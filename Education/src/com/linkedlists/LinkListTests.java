@@ -14,7 +14,5 @@ public class LinkListTests {
 		System.out.println(list.indexOf(100));
 		System.out.println(list.contains(100));
 		System.out.println(list.contains(10));
-		
-		
 	}
 }
