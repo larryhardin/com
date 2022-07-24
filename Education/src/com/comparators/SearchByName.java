@@ -21,7 +21,8 @@ public class SearchByName {
             //When comparing strings:
             //the value 0 if the argument string is equal to this string; 
             //a value less than 0 if this string is lexicographically less than the string argument; 
-            //and a value greater than 0 if this string islexicographically greater than the string argument.
+            //and a value greater than 0 if this string is
+            // lexicographically greater than the string argument.
             //if (x.compareToIgnoreCase(arr.get(mid).name) < 0)
             if (arr.get(mid).name.compareToIgnoreCase(x) > 0)
                 return binarySearchByName(arr, l, mid - 1, x);
