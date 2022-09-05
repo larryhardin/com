@@ -1,7 +1,7 @@
 package com.patterns.behavioral.observer.JavaObserver;
 
 import java.util.Observable;
-
+@SuppressWarnings("deprecation")
 public class ONewsAgency extends Observable {
     private String news;
 

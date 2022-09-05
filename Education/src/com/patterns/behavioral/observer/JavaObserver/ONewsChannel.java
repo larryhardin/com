@@ -2,7 +2,7 @@ package com.patterns.behavioral.observer.JavaObserver;
 //From: https://www.baeldung.com/java-observer-pattern
 import java.util.Observable;
 import java.util.Observer;
-
+@SuppressWarnings("deprecation")
 public class ONewsChannel implements Observer {
 
     private String news;
