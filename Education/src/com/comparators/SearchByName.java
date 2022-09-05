@@ -19,7 +19,7 @@ public class SearchByName {
                 return mid;
   
             //When comparing strings:
-            //the value 0 if the argument string is equal to this string; 
+            //the value is 0 if the argument string is equal to this string; 
             //a value less than 0 if this string is lexicographically less than the string argument; 
             //and a value greater than 0 if this string is
             // lexicographically greater than the string argument.
